@@ -1,16 +1,15 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ExternalLink from "../components/ExternalLink.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+  <h2>自作ツール</h2>
+  <ul>
+    <li><a href="/json">JSON整形</a></li>
+  </ul>
+  <h2>管理者</h2>
+  <ul>
+    <li><ExternalLink url="https://github.com/h6ak" text="GitHub" /></li>
+  </ul>
+</BaseLayout>
