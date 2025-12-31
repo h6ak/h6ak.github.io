@@ -1,7 +1,18 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
+import react from '@astrojs/react';
+
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://h6ak.net',
+  site: 'https://h6ak.net',
+  integrations: [
+    react({
+      babel: {
+        plugins: [
+          'babel-plugin-react-compiler', { target: '19' }
+        ],
+      }
+    })
+  ],
 });
