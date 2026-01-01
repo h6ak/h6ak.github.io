@@ -25,7 +25,6 @@ jobs:
         with:
           # path: . # リポジトリ内のAstroプロジェクトのルートロケーション。(オプション)
           node-version: 20 # サイト構築に使用するNodeのバージョン。デフォルトは18です。（オプション）
-          package-manager: yarn@latest # 依存関係のインストールとサイトのビルドに使用する Node パッケージマネージャ。ロックファイルに基づいて自動的に検出されます。(オプション)
 
   deploy:
     needs: build
