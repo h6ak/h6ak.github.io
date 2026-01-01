@@ -17,6 +17,9 @@
     "react-dom": "^19.2.3"
   },
   "devDependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.6",
     "babel-plugin-react-compiler": "^1.0.0"
   }
 }
